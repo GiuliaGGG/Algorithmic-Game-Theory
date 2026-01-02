@@ -92,7 +92,7 @@
     strategic dynamics between state surveillance apparatus and targeted populations. The analysis suggests that
     technological advances in surveillance create feedback loops that may systematically push toward harsher control policies. 
     We introduce an interpretation suggesting that algorithmic errors and false positives, rather than being bugs to be eliminated, 
-    are tolerated or even strategically advantageous, and may serve the the underlying political economy of population control. The paper 
+    are tolerated or even strategically advantageous, and may serve the underlying political economy of population control. The paper 
     contributes to debates on algorithmic governance by demonstrating how formal game theory can illuminate the political logic of 
     surveillance systems.
 
@@ -165,7 +165,7 @@ resources, while enabling capital accumulation within Israeli society. Additiona
 control. Investigative journalism has clarified that in the context of the search and elimination of targets, the 
 Israeli army has dramatically expanded their definition of "human target" since October 7th, when Hamas-led militants launched a deadly assault 
 on southern Israeli communities \citep{abraham2024lavender}. From being a term used to designate senior military operative, under “Operation 
-Iron Swords,” the army decided to designate all operatives of Hamas’ military wing as human targets, regardless of their rank or military 
+Iron Swords,” the army stated to designate all operatives of Hamas’ military wing as human targets, irrespective of their rank or military 
 importance. Being now the number of the targets in the thousands, the IDF recurred to the use of a new artificial intelligence system, called 
 Lavander, to add people to their 'kill list'. The approval to automatically adopt Lavender’s kill lists was only granted about two weeks into 
 the war, even if the program is relatively highly prone to errors and misclassifications \citep{abraham2024lavender}. This precendent gives reasons to 
@@ -215,7 +215,7 @@ randomly selected individual is type $T$. This prior is common knowledge, but in
 
 \textbf{Government Action.} The government chooses surveillance intensity $s \in [0, \bar{s}]$, which determines the probability of detecting 
 and correctly classifying individuals. Higher $s$ increases both the probability of identifying actual threats and the probability of false 
-positives among non-threats. Specifically, let:
+positives among non-threats. Let:
 \begin{itemize}[nosep]
     \item $\pi_T(\cdot)$ = probability of correctly identifying a type $T$ individual (true positive rate)
     \item $\pi_N(\cdot)$ = probability of incorrectly flagging a type $N$ individual (false positive rate)    
@@ -223,10 +223,10 @@ positives among non-threats. Specifically, let:
 Both functions are increasing in $s$, with $\pi_T(s) > \pi_N(s)$ for all $s > 0$ (the system performs better than random). The cost of 
 surveillance is $C_G(s,t)$, decreasing in technology level $t$.
 
-\textbf{Population Response.} Individuals choose adaptation effort $a \in [0, \bar{a}]$. Adaptation includes avoiding monitored areas, 
+\textbf{Population Response.} Individuals choose adaptation effort $a \in [0, \bar{a}]$. As seen in the literature, adaptation includes avoiding monitored areas, 
 limiting social connections, modifying communication patterns, and other behavioral changes that reduce detectability. For type $T$ individuals, 
 adaptation reduces the probability of detection. For type $N$ individuals, adaptation may reduce false positive risk but imposes costs on daily 
-life. Let $C_P(a)$ denote the cost of adaptation, increasing and convex in $a$.
+life, such as the shrinking of their private spaces. Let $C_P(a)$ denote the cost of adaptation, increasing and convex in $a$.
 
 \textbf{Probability bounds.} We interpret $\pi_T(\cdot)$ and $\pi_N(\cdot)$ as probabilities. To ensure they are always well-defined and lie 
 in $[0,1]$, we restrict choices so that the argument of these functions never leaves their domain. Let $\pi_T,\pi_N:[0,\bar s]\to[0,1]$ be 
@@ -280,7 +280,7 @@ In what follows, we characterize the Stage 1 Bayesian Nash equilibrium for a giv
 % 5. ANALYSIS
 \section{Analysis}
 
-The first-order conditions for optimal choices yield reaction functions. For the government:
+The first-order conditions for optimal choices yield reaction functions. For the government, we set the function as follows:
 \begin{equation}
     \frac{\partial U_G}{\partial s} 
     = \lambda B \,\pi'_T\!\big(s(1-a_T)\big)(1-a_T)
